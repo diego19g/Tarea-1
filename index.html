@@ -2,18 +2,13 @@
     <head>
         <title>Tarea 1</title>
         <style>
-            table{
+            .recuadro{
                 background-color: darkcyan;
                 border-collapse: collapse;
-                margin: auto;
-                width: 25%;
-                height: 100px;
-            }
-            tr {
-                text-align: center;
-            }
-            #color{
+                margin: auto;         
                 color: white;
+                width: 300px;
+                height: 300px;           
             }
             .centrar{
                 text-align: center;
@@ -24,26 +19,31 @@
             p{
                 text-align: center;
             }
+            .fondo1{
+                background-image:url(imagenes/fondo1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .centrarimg{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>        
     </head>
     <body>
-        <img src="../imagenes/fondo1.jpg">
-        <table id="color" wid>
-            <thead>
-                <tr class="centrar">
-                    <td>PROMOCIÓN EN PEDIDOS A RECOGER:</td>                
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="centrar">
-                    <th>POR CADA DOS PIZZAS, LLÉVATE OTRA DE REGALO O UNA BOTELLA DE LAMBRUSCO</th>
-                </tr>
-            </tbody>
-        </table>
+        <div class="fondo1">   
+            <img src="imagenes/logo-tatin.png" class="centrarimg" width="50" height="50">         
+            <div class="recuadro">
+                <p>PROMOCIÓN EN PEDIDOS A RECOGER:</p>
+                <p><b>POR CADA DOS PIZZAS, LLÉVATE OTRA DE REGALO </br> O UNA BOTELLA DE LAMBRUSCO</b></p>
+            </div>
+        </div>        
         <p class="azul">Ven a probar la mejor pasta de Valladolid</p>
         <p>EL RESTAURANTE</p>
-        <img src="../imagenes/tatin-01.jpg">
-        <img src="../imagenes/tatin-02.jpg">
-        
+        <img src="imagenes/tatin-01.jpg">
+        <img src="imagenes/tatin-02.jpg">
+        <!--Las img que van juntas se hacen con parrafos-->
+
     </body>
 </html>
