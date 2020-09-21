@@ -7,17 +7,14 @@
                 border-collapse: collapse;
                 margin: auto;         
                 color: white;
-                width: 300px;
-                height: 300px;           
+                width: 700px;
+                height: 200px;           
             }
             .centrar{
                 text-align: center;
             }
             .azul{
                 color: darkcyan;
-            }
-            p{
-                text-align: center;
             }
             .fondo1{
                 background-image:url(imagenes/fondo1.jpg);
@@ -29,6 +26,15 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            .fondo2{
+                background-image:url(imagenes/fondo2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .verde{
+                color: chartreuse;
+                text-align: center;
+            }
         </style>        
     </head>
     <body>
@@ -38,12 +44,17 @@
                 <p>PROMOCIÓN EN PEDIDOS A RECOGER:</p>
                 <p><b>POR CADA DOS PIZZAS, LLÉVATE OTRA DE REGALO </br> O UNA BOTELLA DE LAMBRUSCO</b></p>
             </div>
-        </div>        
-        <p class="azul">Ven a probar la mejor pasta de Valladolid</p>
-        <p>EL RESTAURANTE</p>
-        <img src="imagenes/tatin-01.jpg">
-        <img src="imagenes/tatin-02.jpg">
+        </div>
+        <div class="centrar">
+            <p class="azul">Ven a probar la mejor pasta de Valladolid</p>
+        </div>
+        <p class="azul">EL RESTAURANTE <img src="imagenes/tatin-01.jpg" width="300" height="200"><img class="derecha" src="imagenes/tatin-02.jpg" width="300" height="200"></p>           
         <!--Las img que van juntas se hacen con parrafos-->
-
+        <p><img src="imagenes/tatin-03.jpg" width="200" height="150"><img src="imagenes/tatin-04.jpg" width="200" height="150"></p>
+        <div class="fondo2">
+            <p class="verde">"No existe plato desdeñado en la cocina cuando se realiza de manera autentica"</p>
+            <img class="centrarimg" src="imagenes/miguel-de-cervantes.jpg" width="50" height="50">
+            <p class="verde">MIGUEL DE CERVANTES</p>
+        </div>
     </body>
 </html>
