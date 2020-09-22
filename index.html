@@ -39,21 +39,47 @@
                 background-size: 100% 100%;
 
             }
+            @font-face {
+                font-family: caveat;
+                src: url(fonts/caveat.woff2);
+            }
             .letra{
+                font-family: caveat;
+                font-size: 30px;
                 color: chartreuse;
                 text-align: center;
-                font-family: ; src: url(fonts/caveat.woff2);
             }
             .verde{
                 color: chartreuse;
                 text-align: center;
             }
-            .fotos{
-                padding-left: 650px;
+            .restaurante{
+                text-align: left;
+                color: darkcyan;
+                padding-left: 20px;
             }
-            .fotos2{
-                padding-left: 850px;                
-                margin-top: -50px;
+            .foto1{
+                text-align: right;
+                margin-bottom: 0px;
+                padding-right: 10px;
+                position: bottom;
+            }
+            .foto2{
+                text-align: left;
+                margin-bottom: 0px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                position: bottom;
+            }
+            .foto3{
+                text-align: right;
+                margin-top: 0px;
+                position: top;
+            }
+            .foto4{
+                text-align: left;
+                margin-top: 0px;
+                position: top;
             }
             .circular{
                 display: block;
@@ -83,13 +109,13 @@
         </div>
         <table>
             <tr>
-                <td colspan="2" class="azul">EL RESTAURANTE</td>
-                <td><img class="fotos" src="imagenes/tatin-01.jpg" width="300" height="200"></td>
-                <td><img class="fotos" src="imagenes/tatin-02.jpg" width="300" height="200"></td>
+                <td rowspan="2" class="restaurante">EL RESTAURANTE</td>
+                <td><img class="foto1" src="imagenes/tatin-01.jpg" width="300" height="200"></td>
+                <td><img class="foto2" src="imagenes/tatin-02.jpg" width="300" height="200"></td>
             </tr>
             <tr>
-                <td><img class="fotos2" src="imagenes/tatin-03.jpg" width="200" height="150"></td>
-                <td><img class="fotos2" src="imagenes/tatin-04.jpg" width="200" height="150"></td>
+                <td><img class="fotos3" src="imagenes/tatin-03.jpg" width="200" height="150"></td>
+                <td><img class="fotos4" src="imagenes/tatin-04.jpg" width="200" height="150"></td>
             </tr>
         </table>
         <div class="fondo2">
