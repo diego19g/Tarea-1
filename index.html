@@ -4,11 +4,14 @@
         <style>
             .recuadro{
                 background-color: darkcyan;
-                border-collapse: collapse;
                 margin: auto;         
                 color: white;
-                width: 700px;
-                height: 200px;           
+                width: 20%;
+                height: 95px; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 11px;
+                text-align: center;                         
             }
             .centrar{
                 text-align: center;
@@ -19,7 +22,9 @@
             .fondo1{
                 background-image:url(imagenes/fondo1.jpg);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100% 100%;
+                padding-top: 10px;
+                height: 200px;                
             }
             .centrarimg{
                 display: block;
@@ -29,17 +34,45 @@
             .fondo2{
                 background-image:url(imagenes/fondo2.jpg);
                 background-repeat: no-repeat;
-                background-size: cover;
+                height: 200px;
+                padding-top: 10px;
+                background-size: 100% 100%;
+
+            }
+            .letra{
+                color: chartreuse;
+                text-align: center;
+                font-family: ; src: url(fonts/caveat.woff2);
             }
             .verde{
                 color: chartreuse;
                 text-align: center;
             }
+            .fotos{
+                padding-left: 650px;
+            }
+            .fotos2{
+                padding-left: 850px;                
+                margin-top: -50px;
+            }
+            .circular{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 50%;
+            }
+            .logo{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>        
     </head>
     <body>
         <div class="fondo1">   
-            <img src="imagenes/logo-tatin.png" class="centrarimg" width="50" height="50">         
+            <img src="imagenes/logo-tatin.png" class="logo" width="75" height="50">         
             <div class="recuadro">
                 <p>PROMOCIÓN EN PEDIDOS A RECOGER:</p>
                 <p><b>POR CADA DOS PIZZAS, LLÉVATE OTRA DE REGALO </br> O UNA BOTELLA DE LAMBRUSCO</b></p>
@@ -48,12 +81,20 @@
         <div class="centrar">
             <p class="azul">Ven a probar la mejor pasta de Valladolid</p>
         </div>
-        <p class="azul">EL RESTAURANTE <img src="imagenes/tatin-01.jpg" width="300" height="200"><img class="derecha" src="imagenes/tatin-02.jpg" width="300" height="200"></p>           
-        <!--Las img que van juntas se hacen con parrafos-->
-        <p><img src="imagenes/tatin-03.jpg" width="200" height="150"><img src="imagenes/tatin-04.jpg" width="200" height="150"></p>
+        <table>
+            <tr>
+                <td colspan="2" class="azul">EL RESTAURANTE</td>
+                <td><img class="fotos" src="imagenes/tatin-01.jpg" width="300" height="200"></td>
+                <td><img class="fotos" src="imagenes/tatin-02.jpg" width="300" height="200"></td>
+            </tr>
+            <tr>
+                <td><img class="fotos2" src="imagenes/tatin-03.jpg" width="200" height="150"></td>
+                <td><img class="fotos2" src="imagenes/tatin-04.jpg" width="200" height="150"></td>
+            </tr>
+        </table>
         <div class="fondo2">
-            <p class="verde">"No existe plato desdeñado en la cocina cuando se realiza de manera autentica"</p>
-            <img class="centrarimg" src="imagenes/miguel-de-cervantes.jpg" width="50" height="50">
+            <p class="letra">"No existe plato desdeñado en la cocina cuando se realiza de manera autentica"</p>
+            <img class="circular" src="imagenes/miguel-de-cervantes.jpg" width="50" height="50">
             <p class="verde">MIGUEL DE CERVANTES</p>
         </div>
     </body>
